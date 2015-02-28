@@ -25,6 +25,8 @@ if len(sys.argv) < 2:
 else:
     in_path = sys.argv[1]
     out_file = sys.argv[2]
+    num_zones = sys.argv[3] # 1 = entire images
+    channel = sys.argv[4] # 0 = Hue, 1 = Saturation, 2 = Value
 
 
 src_path, image_type = in_path, ".jpg"
@@ -35,8 +37,8 @@ for root, dirs, files in os.walk(src_path):
 
 # In[ ]:
 
-num_zones = 1 # 1 = entire images
-channel = 0 # 0 = Hue, 1 = Saturation, 2 = Value
+# num_zones = 1 # 1 = entire images
+# channel = 0 # 0 = Hue, 1 = Saturation, 2 = Value
 
 
 # In[3]:
