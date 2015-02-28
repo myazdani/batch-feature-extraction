@@ -46,9 +46,9 @@ for root, dirs, files in os.walk(src_path):
 def HSVhist_cv(im_path, num_blocks, channels = range(3)):
     # read image
     im = cv2.imread(im_path)
-    im = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
     if str(type(im)) == "<type 'NoneType'>":
         return None
+    im = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
     # set block step sizes
     step_x = im.shape[0]/num_blocks
     step_y = im.shape[1]/num_blocks
