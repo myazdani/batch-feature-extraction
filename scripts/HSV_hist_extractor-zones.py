@@ -90,6 +90,8 @@ def HSVhist_cv(im_path, num_blocks, channels = range(3)):
 
 def HSVhist_pretty(image_path, num_zones = 1, channels = range(3)):
     hists = HSVhist_cv(image_path, num_zones, channels)
+    if str(type(hists)) == "<type 'NoneType'>":
+        return None
     features = []
     for key in sorted(hists.keys()):
         l = hists[key]
