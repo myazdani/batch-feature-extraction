@@ -9,7 +9,7 @@ if len(sys.argv) < 2:
 else:
     in_file = sys.argv[1]
     out_file = sys.argv[2]
-    num_clusters = sys.argv[3]
+    num_clusters = int(sys.argv[3])
 
 # In[4]:
 
