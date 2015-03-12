@@ -26,7 +26,7 @@ features = array([row[1:] for row in rows])
 
 # In[18]:
 
-kmeans = KMeans(init='k-means++', n_clusters = num_clusters, n_init=10, n_jobs = 1)
+kmeans = KMeans(init='k-means++', n_clusters = num_clusters, n_init=10, n_jobs = -1)
 
 # In[21]:
 
